@@ -3,7 +3,16 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
+function denial(){
+  let nosir = 'Absolutely Not Sir'
+  let nowayjose = function(){
+    console.log(nosir);
+  }
+  return nowayjose;
+}
+const nope = denial();
+denial();
+nope();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
